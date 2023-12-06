@@ -2,15 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import statusBar from './componentes/statusBar';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>OI GATO</h1>
-
-      </header>
-    </div>
+    <>
+    <h1>aaaaaaaaaaaaa</h1>
+    <statusBar/>
+    </>
   );
 }
 
