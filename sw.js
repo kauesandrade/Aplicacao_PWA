@@ -1,19 +1,25 @@
 var CACHE_NAME = 'static-v1';
 
 self.addEventListener('install', function (event) {
+
+  console.log("Service install");
+
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
         '/',
         '/index.html',
-        '/styles.css',
-        '/app.js',
+        '/assets/IconLogo512.png',
+
       ]);
     })
   )
 });
 
 self.addEventListener('activate', function activator(event) {
+
+  console.log("Service activate");
+
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys
