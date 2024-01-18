@@ -1,13 +1,13 @@
 {
-    "name": "Furniro - Discover Our New Collection",
-    "short_name": "Furniro",
+    "name": "Nike - Just do it",
+    "short_name": "Nike",
     "theme_color": "#b88e2f",
     "background_color": "#2196f3",
     "display": "minimal-ui",
     "start_url": "/",
     "icons": [
         {
-          "src": "assets/IconLogo512.png",
+          "src": "assets/imagens/nikeIcon.png",
           "sizes": "512x512",
           "type": "image/png"
         }

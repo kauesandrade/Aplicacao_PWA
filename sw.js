@@ -9,8 +9,14 @@ self.addEventListener('install', function (event) {
       return cache.addAll([
         '/',
         '/index.html',
+        '/style.css',
         '/assets/IconLogo512.png',
-
+        '/assets/imagens/navbarIcon.png',
+        '/assets/imagens/nikeIcon.png',
+        '/assets/imagens/nikeLogo.png',
+        '/assets/imagens/carrinhoLogo.png',
+        '/assets/imagens/tenis.png'
+        
       ]);
     })
   )
