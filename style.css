@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap');
+
+#root{
+    margin: 0%;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button{
+    border: 0;
+    background: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 10px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+header ul li {
+    padding: 10px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+header div {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: none;
+}
+
+.divCarrinho {
+    border-left: solid 2px rgb(235, 235, 235);
+    transition: background-color 0.3s
+}
+
+.divCarrinho:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+main {
+    display: flex;
+    height: 875px;
+    background: linear-gradient(to right,
+            rgb(247, 247, 247) 0%,
+            rgb(247, 247, 247) 50%,
+            rgb(67, 202, 255) 50%,
+            rgb(67, 202, 255) 100%);
+
+}
+
+main section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionCard {
+    width: 50%;
+}
+
+.divCardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.divCardText h1 {
+    font-size: 50px;
+}
+
+.divCardText h2 {
+    font-size: 30px;
+}
+
+.divCardButton button {
+    border: 0;
+    padding: 20px 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttonDetalhes {
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.buttonDetalhes:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
+}
+
+.buttonAddCarrinho {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.buttonAddCarrinho:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
+}
+
+.imgTenis{
+    transition: all 1s;
+}
+
+.imgTenis:hover{
+    width: 150%;
+}
+
+@media screen and (max-width: 1600px) {
+
+    main section {
+        width: 50%;
+    }
+
+    .imgTenis {
+        width: 90%;
+    }
+
+    .imgTenis:hover{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        height: 1250px;
+        flex-direction: column;
+        background: linear-gradient(to bottom,
+                rgb(247, 247, 247) 0%,
+                rgb(247, 247, 247) 50%,
+                rgb(67, 202, 255) 50%,
+                rgb(67, 202, 255) 100%);
+    }
+
+    main section {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sectionCard {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    header ul {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .buttonCarrinho {
+        display: none;
+    }
+
+    .divCarrinho {
+        gap: 20px;
+    }
+
+}

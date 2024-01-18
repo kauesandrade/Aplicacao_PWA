@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>cueasd</h1>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/sw.js')
-            .then(function () {
-              console.log('service worker registered');
-            })
-            .catch(function () {
-              console.warn('service worker failed');
-            });
-        }
-      </script>
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <div>
+        <img className='logoNike' src="assets/imagens/nikeLogo.png" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Coleção</a></li>
+          <li><a href="#">Lançamento</a></li>
+          <li><a href="#">Promoção</a></li>
+        </ul>
+      </nav>
+
+      <div className='divCarrinho'>
+        <img className='logoCarrinho' src="assets/imagens/carrinhoLogo.png" />
+        <button className='buttonCarrinho'>Carrinho</button>
+        <img className='navbar' src="assets/imagens/navbarIcon.png" alt="navbar" />
+      </div>
+
+    </header>
+
+    <main>
+
+      <section className='sectionCard'>
+        <div className='divCardText'>
+          <h1>NIKE AIR ZOOM</h1>
+          <p> Novo Lançamento</p>
+          <h2>R$389,90</h2>
+        </div>
+
+        <div className='divCardButton'>
+          <button className='buttonDetalhes'>DETALHES</button>
+          <button className='buttonAddCarrinho'>ADICIONAR AO CARRINHO</button>
+        </div>
+      </section>
+
+      <section>
+        <img className='imgTenis' src="assets/Imagens/tenis.png" alt="Tenis" />
+      </section>
+
+    </main>
+  </div>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function () {
+          console.log('service worker registered');
+        })
+        .catch(function () {
+          console.warn('service worker failed');
+        });
+    }
+  </script>
 </body>
+
 </html>
