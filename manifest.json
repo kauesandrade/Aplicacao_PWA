@@ -1,8 +1,8 @@
 {
     "name": "Nike - Just do it",
     "short_name": "Nike",
-    "theme_color": "#b88e2f",
-    "background_color": "#2196f3",
+    "theme_color": "#cfe2f3",
+    "background_color": "#cfe2f3",
     "display": "minimal-ui",
     "start_url": "/",
     "icons": [
